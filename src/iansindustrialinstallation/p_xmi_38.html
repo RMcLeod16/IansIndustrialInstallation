@@ -1,0 +1,1028 @@
+<html>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+</head>
+<body class="body">
+<table width="100%">
+<tr>
+<td><span class="p_name">Package: iansindustrialinstallation</span></td>
+<td class="t_cell"><a href="p_xmi_38_diagram.html">Diagram</a></td>
+<td class="t_cell"><a href="overview.html">Back to overview</a></td>
+</tr>
+</table>
+<p></p><a name="xmi_5"></a><table width="500" cellspacing="1" cellpadding="2" border="0">
+<tr>
+<td class="ClassTableHeader" width="200"><b>IansIndustrialInstallation</b></td>
+<td class="ClassTableHeader" width="150">
+        class
+      </td>
+</tr>
+</table>    
+
+    Inherits from: 
+
+    Frame<br>
+
+    Implements: 
+
+    WindowListener,  ActionListener,  MouseListener,  AWTEventListener<br><b>Attributes</b><table width="100%" cellpadding="3" cellspacing="0" border="1">
+<tr>
+<td class="tableheader">Name</td>
+<td class="tableheader">Type</td>
+<td class="tableheader">Visibility</td>
+</tr>
+<tr>
+<td class="t_cell">totalX</td>
+<td class="t_cell">int
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">totalY</td>
+<td class="t_cell">int
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">contents</td>
+<td class="t_cell">TextField[][]
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">data</td>
+<td class="t_cell">String[][]
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">lblAddress</td>
+<td class="t_cell">Label
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">lblDate</td>
+<td class="t_cell">Label
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">lblTime</td>
+<td class="t_cell">Label
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">lblHazardLvl</td>
+<td class="t_cell">Label
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">lblHazardName</td>
+<td class="t_cell">Label
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">lblLevel</td>
+<td class="t_cell">Label
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">lblExport</td>
+<td class="t_cell">Label
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">lblLegend</td>
+<td class="t_cell">Label
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">lblAccept</td>
+<td class="t_cell">Label
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">lblConcern</td>
+<td class="t_cell">Label
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">lblDanger</td>
+<td class="t_cell">Label
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">btnSO2</td>
+<td class="t_cell">Button
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">btnNO2</td>
+<td class="t_cell">Button
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">btnCO</td>
+<td class="t_cell">Button
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">btnObstruct</td>
+<td class="t_cell">Button
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">btnExport</td>
+<td class="t_cell">Button
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">btnClose</td>
+<td class="t_cell">Button
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">txtValue</td>
+<td class="t_cell">TextField
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">txtAccept</td>
+<td class="t_cell">TextField
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">txtConcern</td>
+<td class="t_cell">TextField
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">txtDanger</td>
+<td class="t_cell">TextField
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">DEBUG_LOGGING</td>
+<td class="t_cell">boolean
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">manualMode</td>
+<td class="t_cell">boolean
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">Hazard</td>
+<td class="t_cell">enum
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">public</td>
+<td class="t_cell">@Override
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">public</td>
+<td class="t_cell">@Override
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">public</td>
+<td class="t_cell">@Override
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">public</td>
+<td class="t_cell">@Override
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">public</td>
+<td class="t_cell">@Override
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">public</td>
+<td class="t_cell">@Override
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">public</td>
+<td class="t_cell">@Override
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">public</td>
+<td class="t_cell">@Override
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">public</td>
+<td class="t_cell">@Override
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">public</td>
+<td class="t_cell">@Override
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">public</td>
+<td class="t_cell">@Override
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">public</td>
+<td class="t_cell">@Override
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">public</td>
+<td class="t_cell">@Override
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">public</td>
+<td class="t_cell">@Override
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+</table><b>Operations</b><table width="100%" cellpadding="3" cellspacing="0" border="1">
+<tr>
+<td class="tableheader">Name</td>
+<td class="tableheader">Parameters</td>
+<td class="tableheader">Returns</td>
+<td class="tableheader">Visibility</td>
+</tr>
+<tr>
+<td class="t_cell">run</td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">private</td>
+</tr>
+<tr>
+<td class="t_cell">initLayout</td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">private</td>
+</tr>
+<tr>
+<td class="t_cell">AddLabels</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">SpringLayout</td>
+<td class="t_cell">layout</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">private</td>
+</tr>
+<tr>
+<td class="t_cell">AddButtons</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">SpringLayout</td>
+<td class="t_cell">layout</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">private</td>
+</tr>
+<tr>
+<td class="t_cell">AddLegend</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">SpringLayout</td>
+<td class="t_cell">layout</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">private</td>
+</tr>
+<tr>
+<td class="t_cell">AddDataBoxes</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">SpringLayout</td>
+<td class="t_cell">layout</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">private</td>
+</tr>
+<tr>
+<td class="t_cell">ReloadAndRefresh</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">Hazard</td>
+<td class="t_cell">hazard</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">private</td>
+</tr>
+<tr>
+<td class="t_cell">RefreshHazardButtonText</td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">private</td>
+</tr>
+<tr>
+<td class="t_cell">GetXYFromFile</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">String</td>
+<td class="t_cell">fileName</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">private</td>
+</tr>
+<tr>
+<td class="t_cell">LoadDataFromFile</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">String</td>
+<td class="t_cell">fileName</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">String[][]
+       
+    </td>
+<td class="t_cell">private</td>
+</tr>
+<tr>
+<td class="t_cell">setBoxColors</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">Hazard</td>
+<td class="t_cell">hazard</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">private</td>
+</tr>
+<tr>
+<td class="t_cell">GetBoxColor</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">int</td>
+<td class="t_cell">boxValue</td>
+</tr>
+<tr>
+<td class="t_cell">Hazard</td>
+<td class="t_cell">hazard</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">Color
+       
+    </td>
+<td class="t_cell">private</td>
+</tr>
+<tr>
+<td class="t_cell">GetColorLetter</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">int</td>
+<td class="t_cell">boxValue</td>
+</tr>
+<tr>
+<td class="t_cell">Hazard</td>
+<td class="t_cell">hazard</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">String
+       
+    </td>
+<td class="t_cell">private</td>
+</tr>
+<tr>
+<td class="t_cell">ExportData</td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">private</td>
+</tr>
+<tr>
+<td class="t_cell">WriteLinesToFile</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">String</td>
+<td class="t_cell">line</td>
+</tr>
+<tr>
+<td class="t_cell">String</td>
+<td class="t_cell">fileName</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">private</td>
+</tr>
+<tr>
+<td class="t_cell">WriteLinesToFile</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">String[]</td>
+<td class="t_cell">lines</td>
+</tr>
+<tr>
+<td class="t_cell">String</td>
+<td class="t_cell">fileName</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">private</td>
+</tr>
+<tr>
+<td class="t_cell">DebugPrintln</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">String</td>
+<td class="t_cell">line</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">private</td>
+</tr>
+<tr>
+<td class="t_cell">Exit</td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">private</td>
+</tr>
+<tr>
+<td class="t_cell">main</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">String[]</td>
+<td class="t_cell">args</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">LocateALabel</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">SpringLayout</td>
+<td class="t_cell">myLabelLayout</td>
+</tr>
+<tr>
+<td class="t_cell">Label</td>
+<td class="t_cell">myLabel</td>
+</tr>
+<tr>
+<td class="t_cell">String</td>
+<td class="t_cell">LabelCaption</td>
+</tr>
+<tr>
+<td class="t_cell">int</td>
+<td class="t_cell">x</td>
+</tr>
+<tr>
+<td class="t_cell">int</td>
+<td class="t_cell">y</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">Label
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">LocateAButton</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">SpringLayout</td>
+<td class="t_cell">myButtonLayout</td>
+</tr>
+<tr>
+<td class="t_cell">Button</td>
+<td class="t_cell">myButton</td>
+</tr>
+<tr>
+<td class="t_cell">String</td>
+<td class="t_cell">ButtonCaption</td>
+</tr>
+<tr>
+<td class="t_cell">int</td>
+<td class="t_cell">x</td>
+</tr>
+<tr>
+<td class="t_cell">int</td>
+<td class="t_cell">y</td>
+</tr>
+<tr>
+<td class="t_cell">int</td>
+<td class="t_cell">w</td>
+</tr>
+<tr>
+<td class="t_cell">int</td>
+<td class="t_cell">h</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">Button
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">AddATextField</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">SpringLayout</td>
+<td class="t_cell">layout</td>
+</tr>
+<tr>
+<td class="t_cell">TextField</td>
+<td class="t_cell">textfield</td>
+</tr>
+<tr>
+<td class="t_cell">int</td>
+<td class="t_cell">width</td>
+</tr>
+<tr>
+<td class="t_cell">int</td>
+<td class="t_cell">x</td>
+</tr>
+<tr>
+<td class="t_cell">int</td>
+<td class="t_cell">y</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">TextField
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">windowActivated</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">WindowEvent</td>
+<td class="t_cell">e</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">windowClosed</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">WindowEvent</td>
+<td class="t_cell">e</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">windowClosing</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">WindowEvent</td>
+<td class="t_cell">e</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">windowDeactivated</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">WindowEvent</td>
+<td class="t_cell">e</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">windowDeiconified</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">WindowEvent</td>
+<td class="t_cell">e</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">windowIconified</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">WindowEvent</td>
+<td class="t_cell">e</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">windowOpened</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">WindowEvent</td>
+<td class="t_cell">e</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">actionPerformed</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">ActionEvent</td>
+<td class="t_cell">e</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">mouseClicked</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">MouseEvent</td>
+<td class="t_cell">e</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">mouseEntered</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">MouseEvent</td>
+<td class="t_cell">e</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">mouseExited</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">MouseEvent</td>
+<td class="t_cell">e</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">mousePressed</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">MouseEvent</td>
+<td class="t_cell">e</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">mouseReleased</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">MouseEvent</td>
+<td class="t_cell">e</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">eventDispatched</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">AWTEvent</td>
+<td class="t_cell">event</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+</table><br><br><a name="xmi_34"></a><table width="500" cellspacing="1" cellpadding="2" border="0">
+<tr>
+<td class="ClassTableHeader" width="200"><b>IansIndustrialInstallation.ImageComponent</b></td>
+<td class="ClassTableHeader" width="150">
+        class
+      </td>
+</tr>
+</table>    
+
+    Inherits from: 
+
+    Component<br><b>Attributes</b><table width="100%" cellpadding="3" cellspacing="0" border="1">
+<tr>
+<td class="tableheader">Name</td>
+<td class="tableheader">Type</td>
+<td class="tableheader">Visibility</td>
+</tr>
+<tr>
+<td class="t_cell">img</td>
+<td class="t_cell">BufferedImage
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+</table><b>Operations</b><table width="100%" cellpadding="3" cellspacing="0" border="1">
+<tr>
+<td class="tableheader">Name</td>
+<td class="tableheader">Parameters</td>
+<td class="tableheader">Returns</td>
+<td class="tableheader">Visibility</td>
+</tr>
+<tr>
+<td class="t_cell">paint</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">Graphics</td>
+<td class="t_cell">g</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">ImageComponent</td>
+<td class="t_cell">
+<table cellpadding="2" cellspacing="1" border="0">
+<tr>
+<td class="t_cell">String</td>
+<td class="t_cell">path</td>
+</tr>
+</table>
+       
+    </td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+<tr>
+<td class="t_cell">getPreferredSize</td>
+<td class="t_cell">
+       
+    </td>
+<td class="t_cell">Dimension
+       
+    </td>
+<td class="t_cell">public</td>
+</tr>
+</table><br><br></body>
+</html>
